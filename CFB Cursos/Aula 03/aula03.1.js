@@ -11,9 +11,12 @@ const servidor = http.createServer((requisição, resposta) => {
 
     const p = url.parse(requisição.url, true).query
 
-    resposta.write('<br>' + p.nome)
-    resposta.write('<br>' + p.curso)
+    resposta.write('<br/>' + p.nome)
+    resposta.write('<br/>' + p.curso)
     resposta.end()
+
+    //Na URL, o espaço é igual ao sinal de mais (+).
+    //E "&" significa "e".
 })
 
 servidor.listen(porta, host, () => {console.log('Servidor rodando.')})
