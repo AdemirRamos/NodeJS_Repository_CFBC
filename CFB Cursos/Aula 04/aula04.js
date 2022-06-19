@@ -8,9 +8,11 @@ const http = require('http')
 const fs = require('fs')
 const porta = process.env.PORT
 
+//process.env.PORT: https://stackoverflow.com/questions/18864677/what-is-process-env-port-in-node-js
+
 const server = http.createServer((request, response) => {
     //fs.appendFile('site.html') //Anexa um arquivo.
-    
+
     fs.readFile('site.html', (erro, arquivo) => { //Lê um arquivo.
         //Como segundo argumento de "readFile()" temos uma função que, por sua vez, leva dois argumentos;
         //O primeiro argumento da função serve para indicar o procedimento em caso de erro;

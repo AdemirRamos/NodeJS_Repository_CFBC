@@ -8,6 +8,8 @@ const http = require('http')
 const fs = require('fs')
 const porta = process.env.PORT
 
+//process.env.PORT: https://stackoverflow.com/questions/18864677/what-is-process-env-port-in-node-js
+
 const server = http.createServer((request, response) => {
     fs.appendFile('test.txt', 'Curso de Node JS.', (erro) => {
         //Como segundo argumento, o "appendFile()" tem o conteúdo do arquivo.
