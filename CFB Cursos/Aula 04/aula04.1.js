@@ -26,7 +26,7 @@ const server = http.createServer((request, response) => {
         //O mesmo ocorre com "openFile()"; a diferença entre os dois se dá pelo fato de "openFile()" servir para ler arquivos;
         //Já "appendFile()" serve para anexar arquivos.
 
-        response.end() //Sem o método ".end()", o nosso servidor não vai parar de rodar.
+        response.end() //Sem o método ".end()", o nosso servidor não vai parar de rodar/processar.
     })
 })
 
