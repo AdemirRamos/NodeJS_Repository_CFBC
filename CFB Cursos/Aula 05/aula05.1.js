@@ -5,7 +5,7 @@ const app = express() //Criando um aplicativo que recebe a "const express".
 const porta = process.env.PORT //"process.env.PORT" pode ser usado toda vez em que não se saiba a porta onde o servidor vai rodar. 
 
 app.get('/', (requisição, resposta) => { //Aqui indicamos a rota e um "arrow-function" para escrever um bloco de códigos.
-    resposta.send('Seja bem-vindo (a)!') //Esse comando (à esquerda) é equivalente ao "response.write()".
+    resposta.send('Seja bem-vindo (a)!') //Este comando (à esquerda) é equivalente ao "response.write()".
 })
 
 app.get('/canal', (requisição, resposta) => {
