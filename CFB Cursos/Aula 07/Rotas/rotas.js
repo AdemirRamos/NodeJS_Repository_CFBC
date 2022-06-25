@@ -25,6 +25,9 @@ rotas.get('/:cursoid', (requisição, resposta) => {
 
     if (!curso_info) {
         resposta.status(404).json({erros: 'Curso não encontrado.', curso_pesquisado: curso})
+
+        //JSON: https://www.w3schools.com/js/js_json.asp
+        //json(): https://www.geeksforgeeks.org/response-json-python-requests/
     }
 
     else {
