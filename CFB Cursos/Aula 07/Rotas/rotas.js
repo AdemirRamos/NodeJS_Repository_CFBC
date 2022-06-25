@@ -20,6 +20,8 @@ rotas.get('/', (requisição, resposta) => {
 rotas.get('/:cursoid', (requisição, resposta) => {
     const curso = requisição.params.cursoid //Capturando o parâmetro passado através da rota.
     const curso_info = cursos_info.find(i => i.curso == curso)
+    
+    //find(): https://www.w3schools.com/jsref/jsref_find.asp
 
     if (!curso_info) {
         resposta.status(404).json({erros: 'Curso não encontrado.', curso_pesquisado: curso})
