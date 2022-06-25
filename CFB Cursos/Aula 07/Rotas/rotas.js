@@ -1,6 +1,9 @@
 const express = require('express')
 const rotas = express.Router()
 
+//express.Router(): https://expressjs.com/pt-br/guide/routing.html
+//Router: https://medium.com/owinteractive/entendendo-o-express-router-e-usando-módulos-de-forma-simples-24ca6723fe91
+
 let cursos_info = [
     {'curso': 'node js','info': 'curso de node js'},
     {'curso': 'react','info': 'curso de react'},
