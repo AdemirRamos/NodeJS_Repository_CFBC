@@ -9,8 +9,7 @@ const rotas = express.Router()
 //path.join(): https://www.w3schools.com/nodejs/met_path_join.asp
 //__dirname & ./: https://www.geeksforgeeks.org/difference-between-__dirname-and-in-node-js/
 //module.exports: https://www.alura.com.br/artigos/utilizando-export-modules-no-node-js
-//app.use(): https://devpleno.com/o-que-e-o-app-use-no-nodejsexpressjs
-//app.use() e next(): https://expressjs.com/pt-br/guide/writing-middleware.html 
+//app.use() e next(): https://acervolima.com/qual-e-o-uso-da-funcao-next-em-express-js/
 
 let cursos_info = [
     {'curso': 'node js','info': 'curso de node js'},
