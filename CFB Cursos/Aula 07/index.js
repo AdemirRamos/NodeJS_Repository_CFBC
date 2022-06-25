@@ -5,7 +5,7 @@ const app = express()
 
 app.use('/', rotas)
 
-app.get('*', (requisição, resposta) => { //"app.get('*')": Tradução: quando nenhuma rota for encontrada.
+app.get('*', (requisição, resposta) => { //"app.get('*')": Tradução: independentemente da rota acessada, dê a resposta abaixo.
     resposta.send('CFB Cursos')
 })
 
