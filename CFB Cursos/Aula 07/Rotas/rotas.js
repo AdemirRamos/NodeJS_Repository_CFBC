@@ -4,6 +4,14 @@ const rotas = express.Router()
 //express.Router(): https://expressjs.com/pt-br/guide/routing.html
 //Router: https://medium.com/owinteractive/entendendo-o-express-router-e-usando-módulos-de-forma-simples-24ca6723fe91
 
+//sendFile(): https://acervolima.com/funcao-express-js-res-sendfile/
+//Path Module: https://www.w3schools.com/nodejs/ref_path.asp
+//path.join(): https://www.w3schools.com/nodejs/met_path_join.asp
+//__dirname & ./: https://www.geeksforgeeks.org/difference-between-__dirname-and-in-node-js/
+//module.exports: https://www.alura.com.br/artigos/utilizando-export-modules-no-node-js
+//app.use(): https://devpleno.com/o-que-e-o-app-use-no-nodejsexpressjs
+//app.use() e next(): https://expressjs.com/pt-br/guide/writing-middleware.html 
+
 let cursos_info = [
     {'curso': 'node js','info': 'curso de node js'},
     {'curso': 'react','info': 'curso de react'},
